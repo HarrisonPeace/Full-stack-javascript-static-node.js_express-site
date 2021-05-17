@@ -11,7 +11,7 @@ Pug<br>
 CSS<br>
 
 ## Features
-Mock profile page using express.js and Pug to deploy pages to the browser<br>
+Mock profile page using express.js and Pug to deploy html, CSS and client side JavaScript<br>
 Dark / light mode option<br>
 Changed font style from Treehouse provided styles<br>
 img zoom and transition added to profile images. <br>
@@ -20,7 +20,7 @@ img zoom and transition added to profile images. <br>
 Download product files and unzip. <br>
 Run npm install <br>
 Run npm start <br>
-View finsihed project at http://localhost:3000 <br>
+View finished project at http://localhost:3000 <br>
 
 ## Tests and browser compatibility
 As of April 2021. no console errors or bugs are reported.<br>
