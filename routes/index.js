@@ -18,7 +18,6 @@ router.use(function(req, res, next) {
 })
 
 router.get('/', (req, res, next) => {
-    console.log(res.locals.displayStyle)
     res.locals.styleDisplayLocation = '/';
     res.render('index', projects);
 });
