@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  section.error-container
+    h1= error.message
+    p= `Status: ${error.status}`
+    nav.nav
+      a(href='/')
+        span &larr;
+        |  Go Home
