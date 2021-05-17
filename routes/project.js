@@ -1,7 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
 const router = express.Router();
-const data = require('../data/projects.json');
+const data = require('../data/data.json');
 const projects = data.projects;
 
 router.get('/', (req, res, next) => {

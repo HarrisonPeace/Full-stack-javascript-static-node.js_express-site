@@ -1,7 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
 const router = express.Router();
-const projects = require('../data/projects.json');
+const projects = require('../data/data.json');
 
 router.use(function(req, res, next) {
     if(req.method == 'POST') {
