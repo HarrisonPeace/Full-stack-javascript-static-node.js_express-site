@@ -18,15 +18,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/static', express.static('public'));
 
-// app.post('/', function(req, res, next) {
-//     console.log(req.body.displayStyleButton)
-//     res.cookie('displayStyle', req.body.displayStyleButton);
-//     res.locals.displayStyle = req.cookies.displayStyle
-//     console.log(req.method)
-//     req.method = 'GET';
-//     next(); 
-// })
-
 app.use(mainRoutes);
 app.use('/project', projectRoutes);
 
@@ -40,6 +31,9 @@ app.use(function(req, res, next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+    // console log error message
+    console.log(res.locals.message, err.status || 500)
   
     // render the error page
     res.status(err.status || 500);
